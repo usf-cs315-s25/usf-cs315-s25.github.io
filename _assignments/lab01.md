@@ -1,23 +1,18 @@
 ---
 layout: assignment
-due: 
-github_url: 
-published: false
+due: 2025-01-22 23:59:59
+github_url: https://classroom.github.com/a/qf2ExOsp
+published: true
 ---
 
-## Requirements
+## SSH Setup
 
-You will install an emulated RISC-V environment on your laptop using [these instructions](https://github.com/usfca-cs-tools/docs/blob/main/riscv-setup-ubuntu.md)
+1. If you already have ssh access to stargate and github (i.e. `ssh git@github.com` works on stargate) you can skip this step
+1. If you don't already have ssh configured, follow [these instructions](/docs/ssh-beagle-setup.html)
 
-You must demonstrate that you can do the follow actions with your qemu/ubuntu image
-1. Start qemu running ubuntu with start.sh
-1. ssh into your ubuntu guest
-1. Create hello.c with a terminal-based editor (micro/vim/etc.)
-1. Compile hello.c with `make`
-1. Run hello
-1. Clone your github repo with ssh
+## Lab Requirements
 
-Here is a hello.c:
+Create a Hello World program in C, show it compiling, running, and testing successfully. Here is a hello.c:
 
 ```c
 #include <stdio.h>
@@ -44,37 +39,48 @@ clean:
 	rm -rf $(PROG) $(OBJS)
 ```
 
+## Primary Approach: BeagleV-Ahead boards
+
+1. The CS department has purchased a handful of [BeagleV-Ahead boards](https://www.beagleboard.org/boards/beaglev-ahead) for students to connect to using `ssh`
+1. The BeagleV-Ahead boards run Ubuntu and connect to the CS department home directories, just like the `vlab` and `clab` VMs. Therefore your repos are available there.
+1. If your laptop gets lost/stolen/broken, you can `ssh beagle` to connect to one of the boards
+1. You'll need to run the autograder setup steps from above in order to test your solutions
+
+## Backup Approach: Install a RISC-V environment on your laptop
+
+Follow [these instructions](https://github.com/usfca-cs-tools/docs/blob/main/riscv-setup-ubuntu.md)
+
+You must demonstrate that you can do the following actions with your qemu/ubuntu image
+1. Start qemu running ubuntu with start.sh
+1. ssh into your ubuntu guest
+1. Create hello.c with a terminal-based editor (micro/vim/etc.)
+1. Compile hello.c with `make`
+1. Run hello
+1. Clone your github repo with ssh
+
+
 ## Autograder 
 
-To set up the autograder on your Ubuntu guest
+To set up the autograder in your RISC-V environment
 
 1. Clone the repo which contains the code
     ```
     cd
     git clone git@github.com:/phpeterson-usf/autograder
     ```
-1. Clone the repo which contains the test cases (these may be updated during the semester)
+1. Clone the repo which contains the test cases (these will be updated during the semester)
     ```
-    git clone git@github.com:/cs315-s24/tests
+    git clone git@github.com:/cs315-s25/tests
     ```
 1. Edit `~/.bashrc` using a text editor (micro, vim, nano) and adding the line
     ```
-    export PATH=~/autograder:$PATH
+    export PATH=~/cs315/autograder:$PATH
     ```
     Be careful not to add spaces around the `=`
 1. Set the new value of `PATH` in the shell environment
     ```text
     source ~/.bashrc
     ```
-
-## BeagleV-Ahead boards
-
-1. The CS department has purchased a handful of [BeagleV-Ahead boards](https://www.beagleboard.org/boards/beaglev-ahead) for students to connect to using `ssh`
-1. The BeagleV-Ahead boards run Ubuntu and connect to the CS department home directories, just like the `vlab` and `clab` VMs. Therefore your repos are available there.
-1. If your laptop gets lost/stolen/broken, you can `ssh beagle` (the hostname is subject to change) to connect to one of the boards
-1. You'll need to run the autograder setup steps from above in order to test your solutions
-1. The BeagleV-Ahead boards are shared between Prof. Benson's CS 631 sections and our CS 315 sections. This may create contention -- we'll see.
-1. I **strongly** recommend that you commit and push to github frequently so that if disaster strikes your laptop, you can just clone on a beagle host and continue working.
 
 ## Rubric
 
