@@ -8,7 +8,9 @@ published: true
 ## SSH Setup
 
 1. If you already have ssh access to stargate and github (i.e. `ssh git@github.com` works on stargate) you can skip this step
-1. If you don't already have ssh configured, follow [these instructions](/docs/ssh-beagle-setup.html)
+1. If you don't already have ssh configured
+    1. Use the [USF VPN](https://myusf.usfca.edu/vpn) to connect to stargate from USF Connect or your home network
+    1. Follow [these instructions](/docs/ssh-beagle-setup.html) to configure ssh
 
 ## Lab Requirements
 
