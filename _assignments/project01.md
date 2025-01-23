@@ -52,9 +52,4 @@ Pseudocode for `void int_to_string(uint32_t value, char *str, int base)`
 
 ## Rubric
 
-1. Note that the tests repo has been changed for this project, so you need to 
-```text
-	cd ~/tests
-	git pull
-```
-1. 100 points as shown by autograder running on ubuntu/riscv64
+1. 100 points as shown by autograder running on beagle/riscv64
