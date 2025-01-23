@@ -1,6 +1,6 @@
 ---
 layout: assignment
-due: 2025-01-28 08:00:00 - 0800
+due: 2025-01-28 23:59:59 - 0800
 github_url: https://classroom.github.com/a/rgHbLW4G
 published: true
 ---
