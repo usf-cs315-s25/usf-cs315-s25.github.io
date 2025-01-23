@@ -72,7 +72,7 @@ To set up the autograder in your RISC-V environment
     ```
 1. Clone the repo which contains the test cases (these will be updated during the semester)
     ```
-    git clone git@github.com:/cs315-s25/tests
+    git clone git@github.com:/usf-cs315-s25/tests
     ```
 1. Edit `~/.bashrc` using a text editor (micro, vim, nano) and adding the line
     ```
