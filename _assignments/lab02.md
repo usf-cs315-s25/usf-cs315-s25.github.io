@@ -1,8 +1,8 @@
 ---
 layout: assignment
-due: 
-github_url: 
-published: false
+due: 2025-02-04 23:59:59 -0800
+github_url: https://classroom.github.com/a/e-hqco9C
+published: true
 ---
 
 ## Requirements
@@ -36,5 +36,5 @@ We will demonstrate a framework for compiling C and assembly language source fil
 
 ## Rubric
 
-1. 100 points as shown by autograder running on ubuntu/riscv64
+1. 100 points as shown by autograder running on a beagle riscv64 host
 
