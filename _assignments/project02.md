@@ -1,8 +1,8 @@
 ---
 layout: assignment
-due: 
-github_url: 
-published: false
+due: 2025-02-11 23:59:59 -0800
+github_url: https://classroom.github.com/a/Z25PlDHN
+published: true
 ---
 
 ## Requirements
@@ -19,13 +19,18 @@ Given a string of upper, lower, and non-alphanumeric characters, transform lower
     C: FOOBAR1
     Asm: FOOBAR1
 
-**max3**
+**swap**
 
-Given three signed integer parameters, find the largest by comparing the first two, and then comparing the larger of those with the third. That is, max3_s must be implemented using two calls to `max2_s`.
+Given an array of integers, swap element at index i with the element at index j:
 
-    $ ./max3 2 4 6
-    C: 6
-    Asm: 6
+    ./swap <i> <j> <a0> <a1> <a2> ...
+
+    $ ./swap 0 1 5 4 3 2 1
+    C: 4 5 3 2 1
+    Asm: 4 5 3 2 1
+    ./swap 4 3 11 22 33 55 66 77
+    C: 11 22 33 66 55 77
+    Asm: 11 22 33 66 55 77
 
 **find_max_index**
 
@@ -62,4 +67,4 @@ Given the address of an array of unsigned integers, and the length of the array,
 1. Interactive grading logistics
     1. You must show your code in a RISC-V environment (local guest or beagle), and in a terminal editor (not github.com or VS Code or other GUI tool)
     1. Since we have large sections this semester, we will have 10 minute meetings. Please be on time
-    and ready to show your code. We don't have time to watch QEMU boot Ubuntu.
+    and ready to show your code. We don't have time to fix `ssh` or audio/video issues in Zoom.
