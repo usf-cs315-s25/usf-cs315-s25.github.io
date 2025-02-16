@@ -1,8 +1,8 @@
 ---
 layout: assignment
-due: 
-github_url: 
-published: false
+due: 2025-02-25 23:59:59 -0800
+github_url: https://classroom.github.com/a/2m_bjAZC
+published: true
 ---
 
 ## Requirements
@@ -89,5 +89,9 @@ The starter repo contains C implementations for each of the programs
 ## Rubric
 
 1. 80 points: automated test cases. You may need to `git pull` in the tests repo.
-1. 5 points: clean repo (no build products) which compiles and links successfully
-1. 15 points: code quality: consistent formatting, no dead or redundant code, no unnecessarily complex code, readable comments
+1. 20 points: code quality graded offline. 
+    1. Consistent formatting
+    1. No dead or redundant code
+    1. No unnecessarily complex code
+    1. Readable comments
+    1. No build products in the repo
