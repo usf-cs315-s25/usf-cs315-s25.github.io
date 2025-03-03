@@ -1,8 +1,8 @@
 ---
 layout: assignment
-due: 
-github_url: 
-published: false
+due: 2025-03-18 23:59:59 -0800
+github_url: https://classroom.github.com/a/ZvVAh7ZI
+published: true
 ---
 
 ## Requirements 
@@ -38,7 +38,7 @@ published: false
 
 70 pts: Automated tests
 
-**Interactive grading**
+**Code Review**
 
 10 pts: code walkthrough including, but not limited to, your implementation of dynamic analysis and the instruction cache.
 
