@@ -6,7 +6,7 @@ published: false
 ---
 
 ## Requirements
-For this lab you should implement all the components and the top-level partial processor circuit described in the [Project 06 Guide Part 1]({{ site.url }}/guides/project06-part-1.html) with the following exceptions: the Extender and Data Memory for this lab.
+For this lab you should implement all the components and the top-level partial processor circuit described in the [Project 06 Guide Part 1](/guides/project06-part-1.html) with the following exceptions: the Extender and Data Memory for this lab.
 In summary you need to implement:
 1. A Program Counter using  a 64-bit Register with CLR. You may use your own register, or the Digital Register component
 1. A Register File that has 32 registers. Two registers can be read, and one can be written, in a single clock cycle.

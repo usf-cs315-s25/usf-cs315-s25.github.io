@@ -29,7 +29,7 @@ published: true
 1. In lecture and lab, we will: 
     1. illustrate how to decode machine code and execute the operations specified
     1. illustrate a direct-mapped cache and describe the data structures and algorithms required for a set-associative cache
-    1. We have written a [Guide to Cache Memory]({{ site.url }}/guides/cache-memory.html) to help you develop your cache implementation
+    1. We have written a [Guide to Cache Memory](/docs/cache-memory.html) to help you develop your cache implementation
 1. In-class coding will be pushed to Github. You will provide the rest of the code yourself
 1. You will need to `git pull` in the tests repo to get this semester's test cases
 
