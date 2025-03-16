@@ -8,8 +8,7 @@ published: true
 ## Requirements 
 
 1. You will write an emulator in C for a subset of the RISC-V Instruction Set Architecture (ISA). 
-1. You do not have to emulate the entire instruction set; just enough to emulate `fib_rec`, `get_bitseq`, `is_pal`, `max3`, `quadratic`, `sort`, and `to_upper`. 
-1. You will use your implementation of `sort`/`find_max_index` and `str_to_int`/`int_to_str`. The other assembly implementations are given.
+1. You do not have to emulate the entire instruction set - just enough to emulate the given implementations of `fib_rec`, `get_bitseq`, `int_to_str`, `is_pal`, `max3`, `quadratic`, `sort`, `str_to_int`, and `to_upper`. 
 1. Your emulator will need the logic (decoding and emulating instructions) and state (`rv_state`) from lab04
 1. Your emulator will support dynamic analysis of instruction execution. Here are the metrics you will collect:
     1. \# of instructions executed (`i_count`)
