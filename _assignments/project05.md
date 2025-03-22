@@ -1,8 +1,8 @@
 ---
 layout: assignment
-due: 
+due: 2025-04-01 23:59:59 -0700
 github_url: 
-published: false
+published: true
 ---
 
 {% assign img_base = site.url | append: site.baseurl | append: "/assets/img" %}
