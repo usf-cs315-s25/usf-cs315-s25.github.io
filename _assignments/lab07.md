@@ -1,15 +1,15 @@
 ---
 layout: assignment
-due: 
-github_url: 
-published: false
+due: 2025-04-15 23:59:59 -0700
+github_url: https://classroom.github.com/a/U8FqYpu5
+published: true
 ---
 
 ## Requirements
 
 1. For this lab, please use an incremental development approach and commit two top-level circuits: `lab07-part1.dig` and `lab07-part2.dig`. 
 1. Each top-level circuit should contain its own decoder circuit to identify instructions and propagate the appropriate control signals. 
-1. For this lab you will combine your work from lab06 with a new implementation of the control lines as described in the [Project 06 Guide Part 2](/guides/project06-part-2.html)
+1. For this lab you will combine your work from lab06 with a new implementation of the control lines as described in the [Project 06 Guide Part 2](/docs/project06-part-2.html)
 1. Use the spreadsheet approach to develop a decoder table that associated inputs (opcode, funct3, funct7, and funct6) with decoder outputs (`RFW`, `ALUOp`, etc.).
 1. You must have inputs for `CLK`, `EN`, `CLR`, and `PROG`, and outputs for `A0`, `A1`, `A2` and `DONE`
 

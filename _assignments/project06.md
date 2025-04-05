@@ -1,8 +1,8 @@
 ---
 layout: assignment
-due: 
-github_url: 
-published: false
+due: 2025-04-22 23:59:59 -0700
+github_url: https://classroom.github.com/a/ltGUSxr9
+published: true
 ---
 
 ## Due 
@@ -34,7 +34,7 @@ published: false
 
 ## Given
 1. We will discuss the major sub-circuits in lecture and you will have hands-on time to develop and ask questions
-1. We have compiled [Project 06 Guide Part 3](/guides/project06-part-3.html)
+1. We have compiled [Project 06 Guide Part 3](/docs/project06-part-3.html)
 1. We will provide a starter instruction memory with the unit tests and complete program tests.
 1. We will provide a Python script for creating a decode ROM hex file.
 
