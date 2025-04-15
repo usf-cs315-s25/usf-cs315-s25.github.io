@@ -9,7 +9,7 @@ published: true
 
 1. Submit all of the .dig files and .hex files required to run your processor implementation
 1. Submit a PDF for your Decoder spreadsheet
-1. Interactive grading will be scheduled on Wed 4/24. The signup link will be given in Campus Wire.
+1. Interactive grading will be scheduled on Wed 4/23. The signup link will be given in Campus Wire.
 
 ## Requirements
 
