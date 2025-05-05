@@ -36,6 +36,24 @@ Would you predict the BEQ branch to be more frequently taken, or not taken?
 
 ---
 
+## Misprediction
+
+1. What if you guess wrong? <!-- .element: class="fragment" -->
+1. Some performance penalty, obviously <!-- .element: class="fragment" -->
+1. Worse, partially-executed instructions have side effects <!-- .element: class="fragment" -->
+
+---
+
+## Spectre and Meltdown
+
+1. Even if an instruction is flushed from the pipeline, it can leave artifacts in the data cache <!-- .element: class="fragment" -->
+1. The data cache is/was shared among user-space programs <!-- .element: class="fragment" -->
+1. Malicious software can access secrets in the data cache on branch misprediction <!-- .element: class="fragment" -->
+
+source: https://spectreattack.com/
+
+---
+
 ## Load Address Prediction
 
 1. We saw how memory LD stalls the pipeline by inserting a "bubble" <!-- .element: class="fragment" -->
@@ -168,3 +186,38 @@ Both!
 1. Processors do a lot of work to make machine code perform well <!-- .element: class="fragment" -->
 1. Clever microarchitecture goes a long way, but... <!-- .element: class="fragment" -->
 1. Physical limitations of the silicon substrate are the challenge of our time <!-- .element: class="fragment" -->
+
+---
+
+# Data General
+
+---
+
+## Soul Of A New Machine
+
+1. Data General was a minicomputer manufacturer in Boston in the 70s and 80s <!-- .element: class="fragment" -->
+1. https://en.wikipedia.org/wiki/The_Soul_of_a_New_Machine <!-- .element: class="fragment" -->
+1. "Not everything worth doing is worth doing well" <!-- .element: class="fragment" -->
+
+---
+
+![major-components]({{ img_base }}/dasher.png)
+
+Look familiar?
+
+---
+
+## My First Job
+
+1. My first job after college was doing performance analysis on the Data General AViiON workstations <!-- .element: class="fragment" -->
+1. These UNIX (DG/UX) machines ran on the Motorola 88110 processor, which was one of the first commercial out-of-order implementations <!-- .element: class="fragment" -->
+
+---
+
+![major-components]({{ img_base }}/maverick.jpg)
+
+---
+
+## Play the Video!
+
+---
