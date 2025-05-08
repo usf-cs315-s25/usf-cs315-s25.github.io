@@ -37,7 +37,7 @@ layout: raw
 ## ML in One Slide
 
 1. Weights in a neural network are propagated (forward and backward) according to a matrix transformation <!-- .element: class="fragment" -->
-1. Weights are adjusted until inferences are good enough, according to the gradient loss function <!-- .element: class="fragment" -->
+1. Weights are adjusted until inferences are good enough, according to the gradient of the loss function <!-- .element: class="fragment" -->
 
 ---
 
@@ -56,6 +56,7 @@ layout: raw
 1. Both graphics and AI/ML applications use floating point numbers rather than integers <!-- .element: class="fragment" -->
 1. Floating point numbers are represented using a fraction, an exponent, and a sign bit  <!-- .element: class="fragment" -->
 1. In the IEEE 754 standard, single-precision floats have 1 sign bit, 8 bits for the exponent (2^exp), and 23 bits for the fraction (a.k.a. "mantissa" or "significand")  <!-- .element: class="fragment" -->
+1. [Conversion process](https://www.wikihow.com/Convert-a-Number-from-Decimal-to-IEEE-754-Floating-Point-Representation)  <!-- .element: class="fragment" -->
 
 ---
 
@@ -83,15 +84,15 @@ layout: raw
 
 ## RISC-V Vector Instructions
 
-1. Load  <!-- .element: class="fragment" -->
-2. Arithmetic <!-- .element: class="fragment" -->
-3. Store <!-- .element: class="fragment" -->
+1. Load from memory into extra-wide vector registers  <!-- .element: class="fragment" -->
+2. Arithmetic - Do math on one or more vector registers  <!-- .element: class="fragment" -->
+3. Store from vector registers back to memory in one write <!-- .element: class="fragment" -->
 
 ---
 
 ## Do Beagles support the V extension?
 
-Turns out yes! <!-- .element: class="fragment" -->
+Sadly, an old version <!-- .element: class="fragment" -->
 
 [Source](https://chipsandcheese.com/p/alibabat-heads-xuantie-c910)<!-- .element: class="fragment" --> 
 
@@ -100,7 +101,7 @@ Turns out yes! <!-- .element: class="fragment" -->
 ![xuantie910 block diagram]({{ img_base }}/xuantie910.png)
 
 ---
-## Vector Demo
+## Vector [Show And Tell](https://github.com/usf-cs315-s25/inclass/tree/main/week15/vector) 
 
 ---
 
@@ -117,5 +118,6 @@ Turns out yes! <!-- .element: class="fragment" -->
 
 1. NVIDIA develops a parallel programming model called CUDA <!-- .element: class="fragment" -->
 1. CUDA is callable from C/C++, and more recently from Python <!-- .element: class="fragment" -->
-1. Walkthrough code <!-- .element: class="fragment" -->
+1. [Show and tell](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#programming-interface) <!-- .element: class="fragment" -->
 1. Would you be interested in taking a course in GPU programming using CUDA? <!-- .element: class="fragment" -->
+
