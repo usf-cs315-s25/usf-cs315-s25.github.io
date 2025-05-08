@@ -63,13 +63,28 @@ layout: raw
 ## GPU Microarchitecture
 
 1. Don't need: fancy branch prediction, pipeline trickery, high clock frequency <!-- .element: class="fragment" -->
-1. Do need: lots of multiply-capable ALUs, lots of memory bandwidth, lots of vector registers <!-- .element: class="fragment" -->
+1. Do need: lots of multiply-capable FPU, lots of memory bandwidth, lots of vector registers <!-- .element: class="fragment" -->
 1. More like a bulldozer than a scalpel  <!-- .element: class="fragment" -->
 1. "Strip mining" <!-- .element: class="fragment" -->
 
 ---
 
-![maxwell block diagram]({{ img_base }}/maxwell.jpg)
+![blackwell block diagram]({{ img_base }}/maxwell.jpg)
+
+---
+
+## How to schedule FPUs
+
+1. Embed a RISC-V processor!
+2. [Source](https://www.tomshardware.com/pc-components/gpus/nvidia-to-ship-a-billion-of-risc-v-cores-in-2024)
+
+---
+## What about TPUs?
+
+1. Recall a tensor is a vector of matrices <!-- .element: class="fragment" -->
+1. A TPU is like a GPU in the sense that it uses wide registers and memory bandwidth to accelerate matrix multiply <!-- .element: class="fragment" -->
+1. TPUs don't need all the graphics rasterization circuitry, plus the GPU is busy doing graphics <!-- .element: class="fragment" -->
+1. Google: [hardware cards](https://blog.google/feed/trillium-tpus/) <!-- .element: class="fragment" -->for DC ops, Apple: "Neural" processing unit for iOS/Mac computers <!-- .element: class="fragment" -->
 
 ---
 
